@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(163, 17, 17);
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+li:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: rgb(198, 78, 78)
+}
