@@ -1,0 +1,55 @@
+*,
+*::before {
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+/*
+::before: creates a pseudo-element that is the first child of the selected element
+*/
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#outer {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+#outer::before {
+  content: '';
+  width: 250px;
+  height: 250px;
+  background-color: orange;
+}
+
+#middle {
+  width: 200px;
+  height: 200px;
+  background-color: #008000;
+  position: absolute;
+}
+
+#middle::before {
+  content: '';
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+}
+
+#inner {
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  position: absolute;
+}
+
+#inner::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: rebeccapurple;
+}
